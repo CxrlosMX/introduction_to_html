@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+    <!--Editamos el color del parrafo, pero no es correcto editarlo aqui solo es para el ejemplo-->
+    <style>
+        .parrafo-1{ 
+            
+            color: red
+        }
+    </style>
+</head>
+<body>
+    <p class="parrafo-1">Clases</p><!--Aparentemente no cambia nada, pero al trabajar con css podemos acceder al nombre de la clase y configurar su apariencias-->
+    <p id="parrafo">Identificador a travéz de un ID</p><!--Utilizado para la parte de JS, se utiliza como el identificador unico el cual no se debe repetir-->
+    <p title="Este es un Ejemplo de un atributo Tittle">Título con tooltip</p><!--Sirve para mostrar información de lo que estamos mostrandos dentro del navegador-->
+    <p id="parrafo-2" data-ejemplo="datos de ejemplo">Datos pasados de la etiqueta</p>
+
+    <script>
+        const p=document.getElementById('parrafo'); //Guardamos el identificador
+        const parrafo2=document.getElementById('parrafo-2');
+        console.log(p.textContent);//Imprimidos en la consola
+        console.log(parrafo2.dataset.ejemplo);
+    </script>
+</body>
+</html>
