@@ -7,9 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablas</title>
     <style>
-        td {
+         col:nth-child(1){
+            background-color: lightcoral;
+        }
+        col:nth-child(2){
+           
             background-color: royalblue;
         }
+        col:nth-child(3){
+           
+           background-color: lightgreen;
+       }
     </style>
 </head>
 
@@ -21,6 +29,15 @@
     <table>
         <caption>HORARIO DE CLASES</caption>
         <!--Cabecera de la tabla y se sustituyen los td por los th-->
+
+        <!--agrupación columnas-->
+        <colgroup>
+            <!--Cada col representa una columna-->
+            <col span="2">
+            <col span="2">
+            <col span="2">
+            
+        </colgroup>
         <thead>
             <tr>
                 <th></th>
@@ -76,12 +93,12 @@
                 <td>Educación Fisica</td>
                 <td>Plástica</td>
                 <td>Religión</td>
-                
+
 
             </tr>
             <tr>
                 <td>13:35-14:30</td>
-                
+
                 <td>Francés</td>
                 <td>Tecnología</td>
                 <td>Francés</td>
