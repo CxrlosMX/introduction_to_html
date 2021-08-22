@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs de selección</title>
+</head>
+
+<body>
+    <h1>Elementos de selección</h1>
+    <!--radio: Permite seleccionar una unica opcion de una lista de opciones relacionadas-->
+    <form>
+        <h2>Género</h2>
+        <!--name: para especificar el grupo al que pertenece y asi solo podras solo seleccionar uno de los n radio que tengas-->
+        <!--checked: Atributo booleano que sirve para que un componente ya salga marcado-->
+        <!--value: para especificar que valor contiene el elemento, es recomendable para mayor facilidad en el backend-->
+        <label>Masculino
+            <input type="radio" name="gender" value="masculino" checked>
+        </label>
+        <label>Femenino
+            <input type="radio" name="gender" value="femenino">
+        </label>
+        <label>Indefinido
+            <input type="radio" name="gender" value="indefinido">
+        </label>
+
+
+
+    </form>
+</body>
+
+</html>
