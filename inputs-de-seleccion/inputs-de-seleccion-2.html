@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs de selección</title>
+</head>
+
+<body>
+    <h1>Elementos Seleccionables</h1>
+    <!--select: Crea una lista de opciones donde podemos seleccionar una o varias opciones
+    cada opción ira dentro de cada '<option>'-->
+
+    <form>
+        <h2>Select</h2>
+        <!--multiple: es un atributo que permite seleccionar más de una opción-->
+        <select name="lenguajes" multiple>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+        </select>
+    </form>
+
+    <!--Si tenemos muchas opciones podemos ordenarlas por categorías a través de la etiqueta <optgroup>-->
+    <form>
+        <h2>Categorías Select</h2>
+        <select name="mascotas">
+            <optgroup label="4 Patas">
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="hamster">Hamster</option>
+                <option value="conejo">Conejo</option>
+            </optgroup>
+            <optgroup label="Aves">
+                <option value="loro">Loro</option>
+                <option value="canario">Canario</option>
+            </optgroup>
+            <optgroup label="Otros">
+                <option value="serpiente">Serpiente</option>
+                <option value="tarantula">Tarantula</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <form>
+        <h2>Lenguajes</h2>
+        <select name="lenguages">
+            <optgroup label="FrontEnd">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </optgroup>
+            <optgroup label="BackEnd">
+                <option value="java">Java</option>
+                <option value="mysql">MySql</option>
+                <option value="nodejs">NodeJS</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <form>
+        <h2>Radio</h2>
+        <h3>SEXO</h3>
+        <label>
+            M
+            <input type="radio" name="sexo" value="m">
+        </label>
+        <label>
+            H
+            <input type="radio" name="sexo" value="h">
+        </label>
+
+    </form>
+
+    <form>
+        <h2>Checkbox</h2>
+        <h3>Lenguajes de Programación</h3>
+        <label>
+            Java
+            <input type="checkbox" name="lenguage" value="java">
+        </label>
+        <label>
+            Phyton
+            <input type="checkbox" name="lenguage" value="phyton">
+        </label>
+        <label>
+            C++
+            <input type="checkbox" name="lenguage" value="c++">
+        </label>
+
+    </form>
+
+    <form>
+        <h2>DataList</h2>
+
+        <input type="list" list="pets">
+        <datalist id="pets">
+            <option value="perro"></option>
+            <option value="gato"></option>
+            <option value="hamster"></option>
+            <option value="conejo">Conejo</option>
+            <option value="loro">Loro</option>
+            <option value="canario">Canario</option>
+            <option value="serpiente">Serpiente</option>
+            <option value="tarantula">Tarantula</option>
+        </datalist>
+
+    </form>
+    <form>
+        <h2>Lenguajes </h2>
+        <input type="list" list="lenguages">
+        <datalist id="lenguages">
+            <option value="JavaScript">FrontEnd</option>
+            <option value="Java">BackEnd</option>
+            <option value="MySql">Servidor</option>
+        </datalist>
+
+    </form>
+</body>
+
+</html>
