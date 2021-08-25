@@ -12,10 +12,10 @@
     <h1>Elementos de selección</h1>
     <!--radio: Permite seleccionar una unica opcion de una lista de opciones relacionadas-->
     <form>
-        <h2>Género</h2>
-        <!--name: para especificar el grupo al que pertenece y asi solo podras solo seleccionar uno de los n radio que tengas-->
+       <!--  <h2>Género</h2>
+       name: para especificar el grupo al que pertenece y asi solo podras solo seleccionar uno de los n radio que tengas-->
         <!--checked: Atributo booleano que sirve para que un componente ya salga marcado-->
-        <!--value: para especificar que valor contiene el elemento, es recomendable para mayor facilidad en el backend-->
+        <!--value: para especificar que valor contiene el elemento, es recomendable para mayor facilidad en el backend
         <label>Masculino
             <input type="radio" name="gender" value="masculino" checked>
         </label>
@@ -25,8 +25,40 @@
         <label>Indefinido
             <input type="radio" name="gender" value="indefinido">
         </label>
+-->
+    <!--checkbox: permite seleccionar una o más opciones relacionadas-->
+    <h2>Lenguajes que conoces</h2>
 
+    <label>
+        <!--Podemos elegir si primero que salga el mensaje del Label y después el checkbox o biseversa, solo cambiando la posicion
+        <input type="checkbox" name="lenguages" value="html">
+         HTML
+        -->
+        HTML
+        <input type="checkbox" name="lenguages" value="html">
+    </label>
+    <label>
+        CSS
+        <input type="checkbox" name="lenguages" value="css">
+    </label>
+    <label>
+        JavaScript
+        <input type="checkbox" name="lenguages" value="javascript">
+    </label>
 
+        <!--radio-->
+    <h2>Tipo de Celular</h2>
+
+    <label>
+        Iphone 
+        <input type="radio" name="celulares" value="iphone"><!--name:para saber a que categoria pertenecen-->
+    </label>
+    <label>
+        Samsung
+        <input type="radio" name="celulares" value="samsung" checked>
+    </label>
+
+   
 
     </form>
 </body>
