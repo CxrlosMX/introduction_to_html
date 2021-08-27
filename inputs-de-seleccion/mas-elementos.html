@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Más Elementos</title>
+</head>
+
+<body>
+    <!--fieldset: para agrupar elementos dentro de un formulario-->
+    <form>
+        <fieldset>
+            <!--legend: para poner una etiqueta al contenido del fieldset-->
+            <legend>Datos Personales</legend>
+            <div>
+                <label for="name">Nombre</label>
+                <input type="text" id="name">
+            </div>
+            <label for="surname">Apellidos</label>
+            <input type="text" id="surname">
+        </fieldset>
+    </form>
+
+    <form>
+        <!--file: Se utiliza para cargar archivos y enviarlos desde un formulario-->
+        <fieldset>
+            <legend>Enviar</legend>
+            <input type="file">
+        </fieldset>
+    </form>
+
+    <form>
+        <!--meter: representa un valor dentro de un rango conocido-->
+        <fieldset>
+            <legend>Combustible</legend>
+            <label for="fuel">Combustible</label>
+            <meter id="fuel" min="0" max="100" value="60" low="30" high="70" optimum="50"></meter>
+        </fieldset>
+    </form>
+    <form>
+        <!--progress: Se utiliza para representar el progreso de una tarea-->
+        <fieldset>
+            <legend>Tareas</legend>
+            <label for="task"> Tarea 1</label>
+            <progress id="task" max="100" value="50">
+
+            </progress>
+        </fieldset>
+    </form>
+
+    <form>
+        <!--textarea: es para introducir texto en un formulario-->
+        <fieldset>
+            <legend>Mensaje</legend>
+            <label for="message">Mensaje</label>
+            <textarea name="" id="message" cols="30" rows="10"></textarea>
+        </fieldset>
+    </form>
+</body>
+
+</html>

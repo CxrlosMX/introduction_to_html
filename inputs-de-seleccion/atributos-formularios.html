@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos formularios</title>
+</head>
+
+<body>
+    <h1>Atributos de formularios</h1>
+    <form>
+        <!--placehorlder: Da una piesta de lo que debe introducir el usuario-->
+        <fieldset>
+            <legend>PlaceHolder</legend>
+            <input type="text" placeholder="Introduce tu nombre">
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Required</legend>
+            <!--required: Hace que un campo sea obligatorio-->
+            <input type="text" placeholder="Introduce tu N.Control" required>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Campos de solo lectura</legend>
+            <!--readonly: Hace un campo que solo sea de lectura-->
+            <input type="text" value="CxrlosMX" readonly>
+            <!--disabled: Desactiva el campo y no se podra escribir totalmente y no se enviara-->
+            <input type="text" value="CxrlosMX" disabled>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Valores Numericos</legend>
+            <!--min-max: Establece un minimo y un maximo de un campo númerico-->
+            <input type="number" min="5" max="10" placeholder="Introduce Numeros">
+            <button type="submit">Enviar</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Valores de Caracteres</legend>
+            <!--minlenght-maxlenght: Establece un minimo y un maximo de un campo de caracteres albateticos-->
+            <input type="text" minlength="3" maxlength="5" required placeholder="Introduce texto" autofocus>
+            <!--autofocus:Sirve para poner el foco en algun componente al cargar la página-->
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Selected</legend>
+            <!--selected: Equivale a un checked en select, sirve para establecer una opción por defecto-->
+            <select name="numbers">
+                <option value="one">One</option>
+                <option value="two" selected>Two</option>
+            </select>
+        </fieldset>
+    </form>
+</body>
+
+</html>
