@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiqueta Picture</title>
+</head>
+
+<body>
+    <h1>Etiqueta Picture</h1>
+    <!--La etiqueta picture funciona igual que la etiqueta srcset pero nos da más opciones -->
+    <picture>
+        <!--Cuando utilizamos la etiqueta picture tenemos que colocar la etiqueta de copia de seguridad afuerza para que permita hacer uso de ella-->
+        <!--<source srcset="/contenido-embebido/images/my-octocat-.webp, //contenido-embebido/images/p1.png">-->
+        <!--El atributo media es para especificar cuando queremos que muestre esta imagen en este caso, se mostrar solo cuando el ancho sea mas de 1200px-->
+        <source srcset="/contenido-embebido/images/p1.png, /contenido-embebido/images/my-octocat-.webp" media="(min-width:1200px)">
+        <img src="/contenido-embebido/images/picachu.webp" alt="picachu">
+    </picture>
+
+</body>
+
+</html>
